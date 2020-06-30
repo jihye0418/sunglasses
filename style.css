@@ -1,0 +1,584 @@
+/* css초기화 */
+*{
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+
+a{text-decoration: none; color: #1b1b1b;}
+
+li{list-style: none;}
+
+h1,h2,h3,h4,h5,h6{font-size: 16px; color: #1b1b1b;}
+
+body{font-family: 'Poppins','Noto Sans KR',sans-serif;}
+
+button{background: transparent; cursor: pointer;}
+
+/* clearFix */
+.clearfix{*zoom:1;}
+.clearfix::before, clearfix::after{display: block; content:''; line-height: 0;}
+.clearfix::after{clear:both;}
+
+
+
+
+.container{
+    width: 1200px;
+    margin: 0 auto;
+}
+
+.row{padding: 0 10px;}
+
+h3.main_tit{
+    font-size: 40px;
+    line-height: 1.75;;
+    color: #1b1b1b;
+    letter-spacing: 3px;
+    text-align: center;
+}
+
+p.re_tit{text-align: center; font-size: 30px;}
+
+
+
+
+
+/* ========================
+
+            메뉴
+
+===========================*/
+.nav{
+    width: 100%;
+    position: absolute;
+    z-index: 1;
+}
+
+.menu{
+    position: relative;
+    height: 70px;
+/*    background: blue;*/
+}
+
+.menu .main_menu{overflow: hidden;}
+.menu .main_menu li{float: left; margin: 0 41px;}
+.menu .main_menu li a{font-size: 14px; line-height: 70px; color: #fff;}
+.menu .main_menu li a.logo{line-height: 70px; font-size: 30px;  color: #fff; font-weight: bold;letter-spacing: 2px;}
+
+.menu .menu_right{
+    position: absolute;
+    top: 10px;
+    right: 0;
+}
+
+.menu .menu_right li{
+    float: left;
+    width: 48px;
+    height: 48px;
+    text-align: center;
+    margin: 0 11px;
+}
+
+.menu .menu_right li span{
+    line-height: 48px;
+    font-size: 22px;
+    color: #fff;
+}
+
+
+/* ========================
+
+            배너
+
+===========================*/
+.banner{
+    position: relative;
+    width: 100%;
+    height: 890px;
+    background: gray;
+    overflow: hidden;
+    background-image: url(img/banner1.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.banner .banner_txt{
+    position: absolute;
+    text-align: center;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+
+.banner .banner_txt h1{
+    font-size: 50px;
+    line-height: 50px;
+    letter-spacing: 2px;
+    font-weight: 700;
+    color: #fff;
+}
+
+.banner .banner_txt h2{
+    font-size: 40px;
+    font-weight: 400;
+    color: #fff;
+}
+
+/* 슬라이드 페이지 */
+.banner .slide_page{
+    width: 100%;
+    text-align: center;
+    position: absolute;
+    width: 100%;
+    bottom: 32px;
+    left: 0;
+}
+
+.banner .slide_page .page{
+    width: 10px;
+    height: 10px;
+    background: #fff;
+    border-radius: 50%;
+    display: inline-block;
+    margin: 0 16px;
+}
+
+
+/* ========================
+
+            ABOUT
+
+===========================*/
+#about .about{
+    height: 653px;
+    margin-top: 80px;
+    overflow: hidden;
+    display: inline-block;
+}
+
+.about .about_left{
+    width: 532px;
+    height: 612px;
+    float: left;
+}
+
+.about .about_left h3{padding-top: 2px;}
+
+.about .about_left .about_left_img{
+    width: 434px;
+    height: 525px;
+    margin-left: 100px;
+    margin-top: 72px;
+}
+
+.about .about_left .about_left_img img{width: 100%;}
+
+/*about_right*/
+.about .about_right{
+    margin-left: 43px;
+    width: 506px;
+    height: 653px;
+    float: left;
+}
+.about .about_right .about_right_img{
+    width: 506px;
+    height: 443px;
+}
+
+.about .about_right .about_right_img img{width: 100%;}
+
+.about .about_right p{
+    font-size: 16px;
+    margin-top: 43px;
+    font-weight: 400;
+    color: #404040;
+    line-height: 28px;
+    letter-spacing: 1.3px;
+}
+
+
+/* ========================
+
+        STORY of STYLE
+
+===========================*/
+#style{
+    margin-top: 100px;
+}
+.style{
+    height: 736px;
+    position: relative;
+    display: inline-block;
+}
+
+.style h3.main_tit{margin-bottom: 24px;}
+
+.style .style_slide{
+    display: inline-block;
+    position: relative;
+    overflow: hidden;
+}
+.style .style_slide .style_slide_left{
+    float: left;
+    width: 300px;
+    height: 420px;
+}
+
+.style_slide .style_slide_left .style_slide_img{
+    position: absolute;
+    top: 50%;
+    margin-top: -210px;
+}
+.style .style_slide .style_slide_left img{
+    width: 100%;
+    filter:brightness(60%);
+}
+
+.style .style_slide .style_slide_center{
+    float: left;
+    width: 520px;
+    margin: 0 30px;
+    position: relative;
+}
+
+.style_slide .style_slide_center .slide_img img{width: 100%;}
+
+.style_slide .style_slide_center .style_slide_txt{
+    position: absolute;
+    width: 100%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+
+.style_slide .style_slide_center .style_slide_txt{text-align: center;}
+
+.style_slide .style_slide_center .style_slide_txt h4{
+    font-size: 36px;
+    color: #fff;
+    font-weight: 400;
+}
+
+
+.style .style_slide .style_slide_center p{
+    font-size: 36px;
+    color: #fff;
+}
+
+.style .style_slide .style_slide_right{
+    float: left;
+    width: 300px;
+    height: 420px;
+}
+
+.style_slide .style_slide_right .style_slide_img{
+    position: absolute;
+    top: 50%;
+    margin-top: -210px;
+}
+
+.style_slide .style_slide_right .style_slide_img img{
+    width: 100%;
+    filter:brightness(60%);
+}
+
+/* style 슬라이드 버튼 */
+.slide_prev,
+.slide_next{
+    width: 48px;
+    height: 48px;
+    display: inline-block;
+    position: absolute;
+}
+
+.slide_prev{
+    top: 50%;
+    left: -77px;
+}
+
+.slide_next{
+    top: 50%;
+    right: -77px;
+}
+
+
+
+/* ========================
+
+        추천 디자인
+
+===========================*/
+#record{
+    width: 100%;
+    margin-top: 100px;
+    display: inline-block;
+}
+
+#record .record{overflow: hidden;}
+#record .row_reco{padding: 0 50px;}
+
+#record .record .re_txt{margin-bottom: 24px;}
+
+#record .record .re_imag_wrap{width: 100%;}
+
+.re_imag_wrap ul li.card{
+    display: inline-block;
+    width: 25%;
+    float: left;
+    box-sizing: border-box;
+    padding: 0 10px;
+    position: relative;
+}
+
+.re_imag_wrap ul li.card .card_img img{width: 100%;}
+
+.re_imag_wrap ul li.card .card_txt h4.card_tit{
+    font-size: 22px;
+    line-height: 1.75;
+}
+
+li.card .card_txt .card_price .dc_price{
+    display: inline-block;
+    font-size: 16px;
+    margin-right: 10px;
+    vertical-align: bottom;
+}
+
+li.card .card_txt .card_price .pro_price{
+    display: inline-block;
+    text-decoration: line-through;
+    font-size: 14px;
+    color: #d5d5d5;
+}
+
+li.card .card_txt .discount{
+    color: #e53e46;
+    font-size: 14px;
+}
+
+/* 관심 상품 등록 버튼 */
+.to_cart .to_cart_btn,
+.to_cart .to_cart_btn_hover{
+    width: 48px;
+    height: 48px;
+    position: absolute;
+    top: 0;
+    right: 10px;
+    text-align: center;
+    cursor: pointer;
+}
+
+.to_cart span.material-icons{
+    font-size: 28px;
+    line-height: 48px;
+    color: #b2b2b2;
+}
+
+.to_cart .to_cart_btn_hover{opacity: 0;}
+
+.to_cart .to_cart_btn_hover:hover{opacity: 1;}
+
+
+/* ========================
+
+            상품
+
+===========================*/
+#product{
+    margin-top: 80px; 
+    display: inline-block;
+}
+
+#product .product{
+    width: 100%;
+}
+
+#product .product .pro_list{
+    float: left;
+    width: 20%;
+    position: relative;
+    box-sizing: border-box;
+    padding: 0 5px 36px 5px;
+}
+
+.product .pro_list .pro_img img{width: 100%;}
+
+.product .pro_list .pro_bottom{
+    position: relative;
+    padding: 0 15px;
+}
+
+.product .pro_list .pro_bottom h4{
+    font-size: 16px;
+}
+
+.product .pro_list .pro_bottom p{
+    font-size: 14px;
+    font-weight: 400;
+}
+
+.product .pro_list .pro_color{
+    position: absolute;
+    top: 5px;
+    right: 24px;
+    overflow: hidden;
+}
+
+.product .pro_list .pro_color .color{
+    width: 10px;
+    height: 10px;
+    float: left;
+    border-radius: 50%;
+    margin: 0 4px;
+}
+
+/* 색상 */
+.p_c_1{background: #fe3447;}
+.p_c_1_1{background: #332c33;}
+.p_c_2{background: #fef3d5;}
+.p_c_2_1{background: #ead3cb;}
+.p_c_2_2{background: #d3d3d1;}
+.p_c_3{background: #fdd274;}
+.p_c_3_1{background: #bfbdc0;}
+.p_c_4{background: #35383d;}
+.p_c_5{background: #464648;}
+.p_c_6{background: #863e04;}
+.p_c_6_1{background: #000000;}
+.p_c_7{background: #9c502d;}
+.p_c_7_1{background: #604d3e;}
+.p_c_7_2{background: #2a221c;}
+.p_c_8{background: #eed6cb;}
+.p_c_8_1{background: #635031;}
+.p_c_8_2{background: #000000;}
+.p_c_9{background: #640a0f;}
+.p_c_9_1{background: #564e3b;}
+.p_c_9_2{background: #000000;}
+.p_c_10{background: #d4b285;}
+.p_c_10_1{background: #832003;}
+.p_c_10_2{background: #000000;}
+
+
+
+
+/* ========================
+
+        인스타그램
+
+===========================*/
+#insta{width: 100%;}
+
+#insta .insta{
+    width: 100%;
+    margin-top: 64px;
+}
+
+#insta .insta_img{
+    overflow: hidden;
+    width: 100%;
+    margin-top: 45px;
+    margin-bottom: 90px;
+}
+
+#insta .insta_img .insta_images{
+    width: 7.69%;
+    float: left;
+    box-sizing: border-box;
+    padding: 0 5px;
+}
+
+#insta .insta_img .insta_images img{width: 100%;}
+
+/* ========================
+
+            푸터
+
+===========================*/
+footer{
+    background: #ececec; 
+    border-top: 1px solid;
+    padding-bottom: 15px;}
+
+.footer{
+    width: 100%;
+    overflow: hidden;
+}
+
+.footer .footer_left{
+    width: 40%;
+    float: left;
+    box-sizing: border-box;
+}
+.footer .footer_center{
+    width: 40%;
+    float: left;
+}
+.footer .footer_right{
+    width: 20%;
+    float: left;
+}
+
+.footer_tit h5{
+    font-size: 30px;
+    margin-top: 30px;
+    color: #000;
+    line-height: 1.7;
+    text-transform: uppercase;
+}
+
+/* 왼쪽 */
+.footer_txt{line-height: 1.7;}
+.footer_txt p{font-size: 14px;}
+.footer_txt p span{
+    color: #7d7d7d; 
+}
+
+.footer_menu{
+    margin-top: 30px;
+}
+
+.footer_menu ul li{
+    display: inline-block; 
+    position: relative;
+    margin: 0 10px;
+}
+.footer_menu ul li::after{
+    content: "";
+    width: 1px;
+    height: 12px;
+    background: #000;
+    position: absolute;
+    top: 6px;
+    left: -10px;
+}
+.footer_menu ul li:first-child{
+    margin-left: 0;
+}
+.footer_menu ul li:first-child::after{
+    width: 0;
+    height: 0;
+}
+.footer_menu ul li a{
+    text-transform: uppercase;
+    font-size: 14px;
+}
+
+.copyright{
+    margin-top: 30px;
+    font-size: 14px;
+    color: #b2b2b2;
+}
+
+/* 중앙 */
+.footer_txt p.bank{margin-top: 30px;}
+
+/* 오른쪽 */
+.footer_right .footer_txt ul{
+    margin-left: 30px;
+}
+.footer_right .footer_txt ul li{
+    display: inline-block;
+    margin-right: 15px;
+}
+.footer_right .footer_txt ul li:last-child{margin-right:0;}
